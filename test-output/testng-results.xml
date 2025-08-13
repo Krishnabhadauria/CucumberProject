@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="10" failed="5" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-29T13:12:40 IST" name="Default suite" finished-at="2025-07-29T13:13:51 IST" duration-ms="70233">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-07-29T13:12:40 IST" name="Default test" finished-at="2025-07-29T13:13:51 IST" duration-ms="70233">
+      <class name="com.CallTaxiService.cucumber.runners.TestRunner1">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c]" started-at="2025-07-29T13:12:40 IST" name="setUpClass" finished-at="2025-07-29T13:12:41 IST" duration-ms="980" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7ecf4608]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c]" started-at="2025-07-29T13:12:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-29T13:13:01 IST" duration-ms="20158" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submit form with all valid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Booking Page UI and Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c]" started-at="2025-07-29T13:13:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-29T13:13:04 IST" duration-ms="2531" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submit form with missing name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Booking Page UI and Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c]" started-at="2025-07-29T13:13:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-29T13:13:07 IST" duration-ms="2845" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submit form with invalid email format"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Booking Page UI and Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Email field error mismatch! Expected: 'Please enter valid email', Actual: '']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Email field error mismatch! Expected: 'Please enter valid email', Actual: ''
+at org.junit.Assert.fail(Assert.java:89)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at com.CallTaxiService.cucumber.stepDefinitions.BookingSteps.email_field_error_displayed(BookingSteps.java:165)
+at ✽.Error message "Please enter valid email" should be shown under Email field(file:///C:/Users/krish/eclipse-workspace/Sprint2/src/test/java/com/CallTaxiService/cucumber/features/CabBookingValidation.feature:28)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c]" started-at="2025-07-29T13:13:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-29T13:13:09 IST" duration-ms="2448" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submit form with missing trip type"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Booking Page UI and Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c]" started-at="2025-07-29T13:13:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-29T13:13:12 IST" duration-ms="2898" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submit form with missing number of passengers"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Booking Page UI and Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c]" started-at="2025-07-29T13:13:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-29T13:13:16 IST" duration-ms="3345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Booking with row 0 from Excel data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Booking Page UI and Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c]" started-at="2025-07-29T13:13:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-29T13:13:18 IST" duration-ms="2390" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Booking with row 1 from Excel data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Booking Page UI and Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c]" started-at="2025-07-29T13:13:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-29T13:13:22 IST" duration-ms="3595" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Phone Number field with invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Booking Page UI and Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Phone error message mismatch! Expected: 'Invalid Phone Number', Actual: '']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Phone error message mismatch! Expected: 'Invalid Phone Number', Actual: ''
+at org.junit.Assert.fail(Assert.java:89)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at com.CallTaxiService.cucumber.stepDefinitions.BookingSteps.phone_error_displayed(BookingSteps.java:240)
+at ✽.Error message "Invalid Phone Number" should be shown under Phone field(file:///C:/Users/krish/eclipse-workspace/Sprint2/src/test/java/com/CallTaxiService/cucumber/features/CabBookingValidation.feature:69)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c]" started-at="2025-07-29T13:13:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-29T13:13:24 IST" duration-ms="2625" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Pickup Date field with invalid date"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Booking Page UI and Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Pickup Date error message mismatch! Expected: 'Pickup date should be valid', Actual: '']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Pickup Date error message mismatch! Expected: 'Pickup date should be valid', Actual: ''
+at org.junit.Assert.fail(Assert.java:89)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at com.CallTaxiService.cucumber.stepDefinitions.BookingSteps.pickup_date_error_displayed(BookingSteps.java:258)
+at ✽.Error message "Pickup date should be valid" should be shown under Pickup Date field(file:///C:/Users/krish/eclipse-workspace/Sprint2/src/test/java/com/CallTaxiService/cucumber/features/CabBookingValidation.feature:78)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c]" started-at="2025-07-29T13:13:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-29T13:13:27 IST" duration-ms="2665" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate invalid time input"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Booking Page UI and Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Pickup Time error message mismatch! Expected: 'Invalid time format', Actual: '']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Pickup Time error message mismatch! Expected: 'Invalid time format', Actual: ''
+at org.junit.Assert.fail(Assert.java:89)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at com.CallTaxiService.cucumber.stepDefinitions.BookingSteps.pickup_time_error_displayed(BookingSteps.java:276)
+at ✽.Error message "Invalid time format" should be shown under Pickup Time field(file:///C:/Users/krish/eclipse-workspace/Sprint2/src/test/java/com/CallTaxiService/cucumber/features/CabBookingValidation.feature:87)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c]" started-at="2025-07-29T13:13:27 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-29T13:13:42 IST" duration-ms="15244" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Trip Type invalid selection"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Booking Page UI and Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[BUG: Expected Trip Type error message 'Error Message for Trip Type Field' was NOT displayed. This indicates a bug in the application. Expected Trip Type Selection error message not found: By.id: invalidtriptype. Timeout: 10s
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: BUG: Expected Trip Type error message 'Error Message for Trip Type Field' was NOT displayed. This indicates a bug in the application. Expected Trip Type Selection error message not found: By.id: invalidtriptype. Timeout: 10s
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: driver.version: unknown
+at org.junit.Assert.fail(Assert.java:89)
+at com.CallTaxiService.cucumber.stepDefinitions.BookingSteps.trip_type_error_displayed(BookingSteps.java:300)
+at ✽.Error message "Error Message for Trip Type Field" should be shown under Trip Type field(file:///C:/Users/krish/eclipse-workspace/Sprint2/src/test/java/com/CallTaxiService/cucumber/features/CabBookingValidation.feature:96)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c]" started-at="2025-07-29T13:13:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-29T13:13:44 IST" duration-ms="2042" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that cab service link navigates to the correct page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Service Page Cab Type Link Navigation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c]" started-at="2025-07-29T13:13:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-29T13:13:46 IST" duration-ms="1977" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that cab service link navigates to the correct page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Service Page Cab Type Link Navigation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c]" started-at="2025-07-29T13:13:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-29T13:13:48 IST" duration-ms="2272" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that cab service link navigates to the correct page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Service Page Cab Type Link Navigation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c]" started-at="2025-07-29T13:13:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-29T13:13:50 IST" duration-ms="1784" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that cab service link navigates to the correct page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Service Page Cab Type Link Navigation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c]" started-at="2025-07-29T13:13:50 IST" name="tearDownClass" finished-at="2025-07-29T13:13:51 IST" duration-ms="340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.CallTaxiService.cucumber.runners.TestRunner1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

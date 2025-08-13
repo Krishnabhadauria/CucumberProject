@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" verbose="2" parallel="false">
+  <test name="Cucumber Tests">
+    <classes>
+     <class name="com.CallTaxiService.cucumber.runners.TestRunner1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
