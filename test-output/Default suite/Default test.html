@@ -1,0 +1,225 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jul 29 13:12:40 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>70 seconds (70233 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.CallTaxiService.cucumber.runners.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.CallTaxiService.cucumber.runners.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit form with invalid email format", "Booking Page UI and Functional Validation"</td>
+<td><div><pre>java.lang.AssertionError: Email field error mismatch! Expected: &apos;Please enter valid email&apos;, Actual: &apos;&apos;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.CallTaxiService.cucumber.stepDefinitions.BookingSteps.email_field_error_displayed(BookingSteps.java:165)
+	at ✽.Error message &quot;Please enter valid email&quot; should be shown under Email field(file:///C:/Users/krish/eclipse-workspace/Sprint2/src/test/java/com/CallTaxiService/cucumber/features/CabBookingValidation.feature:28)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2041983781", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2041983781'><pre>java.lang.AssertionError: Email field error mismatch! Expected: &apos;Please enter valid email&apos;, Actual: &apos;&apos;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.CallTaxiService.cucumber.stepDefinitions.BookingSteps.email_field_error_displayed(BookingSteps.java:165)
+	at ✽.Error message &quot;Please enter valid email&quot; should be shown under Email field(file:///C:/Users/krish/eclipse-workspace/Sprint2/src/test/java/com/CallTaxiService/cucumber/features/CabBookingValidation.feature:28)
+</pre></div></td>
+<td>2</td>
+<td>com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c</td></tr>
+<tr>
+<td title='com.CallTaxiService.cucumber.runners.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.CallTaxiService.cucumber.runners.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Phone Number field with invalid inputs", "Booking Page UI and Functional Validation"</td>
+<td><div><pre>java.lang.AssertionError: Phone error message mismatch! Expected: &apos;Invalid Phone Number&apos;, Actual: &apos;&apos;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.CallTaxiService.cucumber.stepDefinitions.BookingSteps.phone_error_displayed(BookingSteps.java:240)
+	at ✽.Error message &quot;Invalid Phone Number&quot; should be shown under Phone field(file:///C:/Users/krish/eclipse-workspace/Sprint2/src/test/java/com/CallTaxiService/cucumber/features/CabBookingValidation.feature:69)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1214687061", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1214687061'><pre>java.lang.AssertionError: Phone error message mismatch! Expected: &apos;Invalid Phone Number&apos;, Actual: &apos;&apos;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.CallTaxiService.cucumber.stepDefinitions.BookingSteps.phone_error_displayed(BookingSteps.java:240)
+	at ✽.Error message &quot;Invalid Phone Number&quot; should be shown under Phone field(file:///C:/Users/krish/eclipse-workspace/Sprint2/src/test/java/com/CallTaxiService/cucumber/features/CabBookingValidation.feature:69)
+</pre></div></td>
+<td>3</td>
+<td>com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c</td></tr>
+<tr>
+<td title='com.CallTaxiService.cucumber.runners.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.CallTaxiService.cucumber.runners.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Pickup Date field with invalid date", "Booking Page UI and Functional Validation"</td>
+<td><div><pre>java.lang.AssertionError: Pickup Date error message mismatch! Expected: &apos;Pickup date should be valid&apos;, Actual: &apos;&apos;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.CallTaxiService.cucumber.stepDefinitions.BookingSteps.pickup_date_error_displayed(BookingSteps.java:258)
+	at ✽.Error message &quot;Pickup date should be valid&quot; should be shown under Pickup Date field(file:///C:/Users/krish/eclipse-workspace/Sprint2/src/test/java/com/CallTaxiService/cucumber/features/CabBookingValidation.feature:78)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2129236490", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2129236490'><pre>java.lang.AssertionError: Pickup Date error message mismatch! Expected: &apos;Pickup date should be valid&apos;, Actual: &apos;&apos;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.CallTaxiService.cucumber.stepDefinitions.BookingSteps.pickup_date_error_displayed(BookingSteps.java:258)
+	at ✽.Error message &quot;Pickup date should be valid&quot; should be shown under Pickup Date field(file:///C:/Users/krish/eclipse-workspace/Sprint2/src/test/java/com/CallTaxiService/cucumber/features/CabBookingValidation.feature:78)
+</pre></div></td>
+<td>2</td>
+<td>com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c</td></tr>
+<tr>
+<td title='com.CallTaxiService.cucumber.runners.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.CallTaxiService.cucumber.runners.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Trip Type invalid selection", "Booking Page UI and Functional Validation"</td>
+<td><div><pre>java.lang.AssertionError: BUG: Expected Trip Type error message &apos;Error Message for Trip Type Field&apos; was NOT displayed. This indicates a bug in the application. Expected Trip Type Selection error message not found: By.id: invalidtriptype. Timeout: 10s
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: driver.version: unknown
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.CallTaxiService.cucumber.stepDefinitions.BookingSteps.trip_type_error_displayed(BookingSteps.java:300)
+	at ✽.Error message &quot;Error Message for Trip Type Field&quot; should be shown under Trip Type field(file:///C:/Users/krish/eclipse-workspace/Sprint2/src/test/java/com/CallTaxiService/cucumber/features/CabBookingValidation.feature:96)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2008027686", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2008027686'><pre>java.lang.AssertionError: BUG: Expected Trip Type error message &apos;Error Message for Trip Type Field&apos; was NOT displayed. This indicates a bug in the application. Expected Trip Type Selection error message not found: By.id: invalidtriptype. Timeout: 10s
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: driver.version: unknown
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.CallTaxiService.cucumber.stepDefinitions.BookingSteps.trip_type_error_displayed(BookingSteps.java:300)
+	at ✽.Error message &quot;Error Message for Trip Type Field&quot; should be shown under Trip Type field(file:///C:/Users/krish/eclipse-workspace/Sprint2/src/test/java/com/CallTaxiService/cucumber/features/CabBookingValidation.feature:96)
+</pre></div></td>
+<td>15</td>
+<td>com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c</td></tr>
+<tr>
+<td title='com.CallTaxiService.cucumber.runners.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.CallTaxiService.cucumber.runners.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate invalid time input", "Booking Page UI and Functional Validation"</td>
+<td><div><pre>java.lang.AssertionError: Pickup Time error message mismatch! Expected: &apos;Invalid time format&apos;, Actual: &apos;&apos;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.CallTaxiService.cucumber.stepDefinitions.BookingSteps.pickup_time_error_displayed(BookingSteps.java:276)
+	at ✽.Error message &quot;Invalid time format&quot; should be shown under Pickup Time field(file:///C:/Users/krish/eclipse-workspace/Sprint2/src/test/java/com/CallTaxiService/cucumber/features/CabBookingValidation.feature:87)
+</pre></div><a href='#' onClick='toggleBox("stack-trace69338216", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace69338216'><pre>java.lang.AssertionError: Pickup Time error message mismatch! Expected: &apos;Invalid time format&apos;, Actual: &apos;&apos;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.CallTaxiService.cucumber.stepDefinitions.BookingSteps.pickup_time_error_displayed(BookingSteps.java:276)
+	at ✽.Error message &quot;Invalid time format&quot; should be shown under Pickup Time field(file:///C:/Users/krish/eclipse-workspace/Sprint2/src/test/java/com/CallTaxiService/cucumber/features/CabBookingValidation.feature:87)
+</pre></div></td>
+<td>2</td>
+<td>com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.CallTaxiService.cucumber.runners.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.CallTaxiService.cucumber.runners.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit form with missing trip type", "Booking Page UI and Functional Validation"</td>
+<td></td>
+<td>2</td>
+<td>com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c</td></tr>
+<tr>
+<td title='com.CallTaxiService.cucumber.runners.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.CallTaxiService.cucumber.runners.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that cab service link navigates to the correct page", "Service Page Cab Type Link Navigation"</td>
+<td></td>
+<td>2</td>
+<td>com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c</td></tr>
+<tr>
+<td title='com.CallTaxiService.cucumber.runners.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.CallTaxiService.cucumber.runners.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit form with missing name", "Booking Page UI and Functional Validation"</td>
+<td></td>
+<td>2</td>
+<td>com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c</td></tr>
+<tr>
+<td title='com.CallTaxiService.cucumber.runners.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.CallTaxiService.cucumber.runners.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit form with missing number of passengers", "Booking Page UI and Functional Validation"</td>
+<td></td>
+<td>2</td>
+<td>com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c</td></tr>
+<tr>
+<td title='com.CallTaxiService.cucumber.runners.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.CallTaxiService.cucumber.runners.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that cab service link navigates to the correct page", "Service Page Cab Type Link Navigation"</td>
+<td></td>
+<td>1</td>
+<td>com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c</td></tr>
+<tr>
+<td title='com.CallTaxiService.cucumber.runners.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.CallTaxiService.cucumber.runners.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit form with all valid data", "Booking Page UI and Functional Validation"</td>
+<td></td>
+<td>20</td>
+<td>com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c</td></tr>
+<tr>
+<td title='com.CallTaxiService.cucumber.runners.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.CallTaxiService.cucumber.runners.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that cab service link navigates to the correct page", "Service Page Cab Type Link Navigation"</td>
+<td></td>
+<td>1</td>
+<td>com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c</td></tr>
+<tr>
+<td title='com.CallTaxiService.cucumber.runners.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.CallTaxiService.cucumber.runners.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Booking with row 0 from Excel data", "Booking Page UI and Functional Validation"</td>
+<td></td>
+<td>3</td>
+<td>com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c</td></tr>
+<tr>
+<td title='com.CallTaxiService.cucumber.runners.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.CallTaxiService.cucumber.runners.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that cab service link navigates to the correct page", "Service Page Cab Type Link Navigation"</td>
+<td></td>
+<td>2</td>
+<td>com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c</td></tr>
+<tr>
+<td title='com.CallTaxiService.cucumber.runners.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.CallTaxiService.cucumber.runners.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Booking with row 1 from Excel data", "Booking Page UI and Functional Validation"</td>
+<td></td>
+<td>2</td>
+<td>com.CallTaxiService.cucumber.runners.TestRunner1@2e55dd0c</td></tr>
+</table><p>
+</body>
+</html>

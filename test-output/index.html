@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>C:\Users\krish\AppData\Local\Temp\testng-eclipse-2056294265\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">15 methods, 5 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.CallTaxiService.cucumber.runners.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Submit form with invalid email format&quot;, &quot;Booking Page UI and Functional Validation&quot;)">runScenario("Submit form with invalid email format", "Booking Page UI and Functional Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.CallTaxiService.cucumber.runners.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate Phone Number field with invalid inputs&quot;, &quot;Booking Page UI and Functional Validation&quot;)">runScenario("Validate Phone Number field with invalid inputs", "Booking Page UI and Functional Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.CallTaxiService.cucumber.runners.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate Pickup Date field with invalid date&quot;, &quot;Booking Page UI and Functional Validation&quot;)">runScenario("Validate Pickup Date field with invalid date", "Booking Page UI and Functional Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.CallTaxiService.cucumber.runners.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate Trip Type invalid selection&quot;, &quot;Booking Page UI and Functional Validation&quot;)">runScenario("Validate Trip Type invalid selection", "Booking Page UI and Functional Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.CallTaxiService.cucumber.runners.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate invalid time input&quot;, &quot;Booking Page UI and Functional Validation&quot;)">runScenario("Validate invalid time input", "Booking Page UI and Functional Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.CallTaxiService.cucumber.runners.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Submit form with missing trip type&quot;, &quot;Booking Page UI and Functional Validation&quot;)">runScenario("Submit form with missing trip type", "Booking Page UI and Functional Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.CallTaxiService.cucumber.runners.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Verify that cab service link navigates to the correct page&quot;, &quot;Service Page Cab Type Link Navigation...)">runScenario("Verify that cab service link navigates to the correct page", "Service Page Cab Type Link Navigation...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.CallTaxiService.cucumber.runners.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Submit form with missing name&quot;, &quot;Booking Page UI and Functional Validation&quot;)">runScenario("Submit form with missing name", "Booking Page UI and Functional Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.CallTaxiService.cucumber.runners.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Submit form with missing number of passengers&quot;, &quot;Booking Page UI and Functional Validation&quot;)">runScenario("Submit form with missing number of passengers", "Booking Page UI and Functional Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.CallTaxiService.cucumber.runners.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Verify that cab service link navigates to the correct page&quot;, &quot;Service Page Cab Type Link Navigation...)">runScenario("Verify that cab service link navigates to the correct page", "Service Page Cab Type Link Navigation...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.CallTaxiService.cucumber.runners.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Submit form with all valid data&quot;, &quot;Booking Page UI and Functional Validation&quot;)">runScenario("Submit form with all valid data", "Booking Page UI and Functional Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.CallTaxiService.cucumber.runners.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Verify that cab service link navigates to the correct page&quot;, &quot;Service Page Cab Type Link Navigation...)">runScenario("Verify that cab service link navigates to the correct page", "Service Page Cab Type Link Navigation...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.CallTaxiService.cucumber.runners.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Booking with row 0 from Excel data&quot;, &quot;Booking Page UI and Functional Validation&quot;)">runScenario("Booking with row 0 from Excel data", "Booking Page UI and Functional Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.CallTaxiService.cucumber.runners.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Verify that cab service link navigates to the correct page&quot;, &quot;Service Page Cab Type Link Navigation...)">runScenario("Verify that cab service link navigates to the correct page", "Service Page Cab Type Link Navigation...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.CallTaxiService.cucumber.runners.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Booking with row 1 from Excel data&quot;, &quot;Booking Page UI and Functional Validation&quot;)">runScenario("Booking with row 1 from Excel data", "Booking Page UI and Functional Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.CallTaxiService.cucumber.runners.TestRunner1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Submit form with invalid email format&quot;, &quot;Booking Page UI and Functional Validation&quot;)">
+                  </a> <!-- runScenario("Submit form with invalid email format", "Booking Page UI and Functional Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Submit form with invalid email format","Booking Page UI and Functional Validation")</span>
+                  <div class="stack-trace">java.lang.AssertionError: Email field error mismatch! Expected: &apos;Please enter valid email&apos;, Actual: &apos;&apos;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.CallTaxiService.cucumber.stepDefinitions.BookingSteps.email_field_error_displayed(BookingSteps.java:165)
+	at ✽.Error message &quot;Please enter valid email&quot; should be shown under Email field(file:///C:/Users/krish/eclipse-workspace/Sprint2/src/test/java/com/CallTaxiService/cucumber/features/CabBookingValidation.feature:28)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate Phone Number field with invalid inputs&quot;, &quot;Booking Page UI and Functional Validation&quot;)">
+                  </a> <!-- runScenario("Validate Phone Number field with invalid inputs", "Booking Page UI and Functional Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate Phone Number field with invalid inputs","Booking Page UI and Functional Validation")</span>
+                  <div class="stack-trace">java.lang.AssertionError: Phone error message mismatch! Expected: &apos;Invalid Phone Number&apos;, Actual: &apos;&apos;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.CallTaxiService.cucumber.stepDefinitions.BookingSteps.phone_error_displayed(BookingSteps.java:240)
+	at ✽.Error message &quot;Invalid Phone Number&quot; should be shown under Phone field(file:///C:/Users/krish/eclipse-workspace/Sprint2/src/test/java/com/CallTaxiService/cucumber/features/CabBookingValidation.feature:69)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate Pickup Date field with invalid date&quot;, &quot;Booking Page UI and Functional Validation&quot;)">
+                  </a> <!-- runScenario("Validate Pickup Date field with invalid date", "Booking Page UI and Functional Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate Pickup Date field with invalid date","Booking Page UI and Functional Validation")</span>
+                  <div class="stack-trace">java.lang.AssertionError: Pickup Date error message mismatch! Expected: &apos;Pickup date should be valid&apos;, Actual: &apos;&apos;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.CallTaxiService.cucumber.stepDefinitions.BookingSteps.pickup_date_error_displayed(BookingSteps.java:258)
+	at ✽.Error message &quot;Pickup date should be valid&quot; should be shown under Pickup Date field(file:///C:/Users/krish/eclipse-workspace/Sprint2/src/test/java/com/CallTaxiService/cucumber/features/CabBookingValidation.feature:78)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate Trip Type invalid selection&quot;, &quot;Booking Page UI and Functional Validation&quot;)">
+                  </a> <!-- runScenario("Validate Trip Type invalid selection", "Booking Page UI and Functional Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate Trip Type invalid selection","Booking Page UI and Functional Validation")</span>
+                  <div class="stack-trace">java.lang.AssertionError: BUG: Expected Trip Type error message &apos;Error Message for Trip Type Field&apos; was NOT displayed. This indicates a bug in the application. Expected Trip Type Selection error message not found: By.id: invalidtriptype. Timeout: 10s
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: driver.version: unknown
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.CallTaxiService.cucumber.stepDefinitions.BookingSteps.trip_type_error_displayed(BookingSteps.java:300)
+	at ✽.Error message &quot;Error Message for Trip Type Field&quot; should be shown under Trip Type field(file:///C:/Users/krish/eclipse-workspace/Sprint2/src/test/java/com/CallTaxiService/cucumber/features/CabBookingValidation.feature:96)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate invalid time input&quot;, &quot;Booking Page UI and Functional Validation&quot;)">
+                  </a> <!-- runScenario("Validate invalid time input", "Booking Page UI and Functional Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate invalid time input","Booking Page UI and Functional Validation")</span>
+                  <div class="stack-trace">java.lang.AssertionError: Pickup Time error message mismatch! Expected: &apos;Invalid time format&apos;, Actual: &apos;&apos;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.CallTaxiService.cucumber.stepDefinitions.BookingSteps.pickup_time_error_displayed(BookingSteps.java:276)
+	at ✽.Error message &quot;Invalid time format&quot; should be shown under Pickup Time field(file:///C:/Users/krish/eclipse-workspace/Sprint2/src/test/java/com/CallTaxiService/cucumber/features/CabBookingValidation.feature:87)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.CallTaxiService.cucumber.runners.TestRunner1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Submit form with missing trip type&quot;, &quot;Booking Page UI and Functional Validation&quot;)">
+                  </a> <!-- runScenario("Submit form with missing trip type", "Booking Page UI and Functional Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Submit form with missing trip type","Booking Page UI and Functional Validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify that cab service link navigates to the correct page&quot;, &quot;Service Page Cab Type Link Navigation...)">
+                  </a> <!-- runScenario("Verify that cab service link navigates to the correct page", "Service Page Cab Type Link Navigation...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify that cab service link navigates to the correct page","Service Page Cab Type Link Navigation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Submit form with missing name&quot;, &quot;Booking Page UI and Functional Validation&quot;)">
+                  </a> <!-- runScenario("Submit form with missing name", "Booking Page UI and Functional Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Submit form with missing name","Booking Page UI and Functional Validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Submit form with missing number of passengers&quot;, &quot;Booking Page UI and Functional Validation&quot;)">
+                  </a> <!-- runScenario("Submit form with missing number of passengers", "Booking Page UI and Functional Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Submit form with missing number of passengers","Booking Page UI and Functional Validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify that cab service link navigates to the correct page&quot;, &quot;Service Page Cab Type Link Navigation...)">
+                  </a> <!-- runScenario("Verify that cab service link navigates to the correct page", "Service Page Cab Type Link Navigation...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify that cab service link navigates to the correct page","Service Page Cab Type Link Navigation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Submit form with all valid data&quot;, &quot;Booking Page UI and Functional Validation&quot;)">
+                  </a> <!-- runScenario("Submit form with all valid data", "Booking Page UI and Functional Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Submit form with all valid data","Booking Page UI and Functional Validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify that cab service link navigates to the correct page&quot;, &quot;Service Page Cab Type Link Navigation...)">
+                  </a> <!-- runScenario("Verify that cab service link navigates to the correct page", "Service Page Cab Type Link Navigation...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify that cab service link navigates to the correct page","Service Page Cab Type Link Navigation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Booking with row 0 from Excel data&quot;, &quot;Booking Page UI and Functional Validation&quot;)">
+                  </a> <!-- runScenario("Booking with row 0 from Excel data", "Booking Page UI and Functional Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Booking with row 0 from Excel data","Booking Page UI and Functional Validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify that cab service link navigates to the correct page&quot;, &quot;Service Page Cab Type Link Navigation...)">
+                  </a> <!-- runScenario("Verify that cab service link navigates to the correct page", "Service Page Cab Type Link Navigation...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify that cab service link navigates to the correct page","Service Page Cab Type Link Navigation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Booking with row 1 from Excel data&quot;, &quot;Booking Page UI and Functional Validation&quot;)">
+                  </a> <!-- runScenario("Booking with row 1 from Excel data", "Booking Page UI and Functional Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Booking with row 1 from Excel data","Booking Page UI and Functional Validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\krish\AppData\Local\Temp\testng-eclipse-2056294265\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.CallTaxiService.cucumber.utils.LoggerUtil&quot;/&gt;
+      &lt;class name=&quot;com.CallTaxiService.cucumber.utils.Reports&quot;/&gt;
+      &lt;class name=&quot;com.CallTaxiService.cucumber.stepDefinitions.BookingSteps&quot;/&gt;
+      &lt;class name=&quot;com.CallTaxiService.cucumber.runners.TestRunner&quot;/&gt;
+      &lt;class name=&quot;com.CallTaxiService.cucumber.pages.ServicesPage&quot;/&gt;
+      &lt;class name=&quot;com.CallTaxiService.cucumber.stepDefinitions.ServiceSteps&quot;/&gt;
+      &lt;class name=&quot;com.CallTaxiService.cucumber.base.DriverFactory&quot;/&gt;
+      &lt;class name=&quot;com.CallTaxiService.cucumber.hooks.Hooks&quot;/&gt;
+      &lt;class name=&quot;com.CallTaxiService.cucumber.configs.ConfigReader&quot;/&gt;
+      &lt;class name=&quot;com.CallTaxiService.cucumber.pages.BookingPage&quot;/&gt;
+      &lt;class name=&quot;com.CallTaxiService.cucumber.runners.TestRunner1&quot;/&gt;
+      &lt;class name=&quot;com.CallTaxiService.cucumber.utils.ExcelUtil&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (12 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(15);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'com.CallTaxiService.cucumber.runners.TestRunner1')
+data.setCell(0, 3, 20158);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'com.CallTaxiService.cucumber.runners.TestRunner1')
+data.setCell(1, 3, 15244);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'com.CallTaxiService.cucumber.runners.TestRunner1')
+data.setCell(2, 3, 3595);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'com.CallTaxiService.cucumber.runners.TestRunner1')
+data.setCell(3, 3, 3345);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'com.CallTaxiService.cucumber.runners.TestRunner1')
+data.setCell(4, 3, 2898);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'com.CallTaxiService.cucumber.runners.TestRunner1')
+data.setCell(5, 3, 2845);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'com.CallTaxiService.cucumber.runners.TestRunner1')
+data.setCell(6, 3, 2665);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'com.CallTaxiService.cucumber.runners.TestRunner1')
+data.setCell(7, 3, 2625);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'com.CallTaxiService.cucumber.runners.TestRunner1')
+data.setCell(8, 3, 2531);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'com.CallTaxiService.cucumber.runners.TestRunner1')
+data.setCell(9, 3, 2448);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'com.CallTaxiService.cucumber.runners.TestRunner1')
+data.setCell(10, 3, 2390);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'com.CallTaxiService.cucumber.runners.TestRunner1')
+data.setCell(11, 3, 2272);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'com.CallTaxiService.cucumber.runners.TestRunner1')
+data.setCell(12, 3, 2042);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'com.CallTaxiService.cucumber.runners.TestRunner1')
+data.setCell(13, 3, 1977);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'com.CallTaxiService.cucumber.runners.TestRunner1')
+data.setCell(14, 3, 1784);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.CallTaxiService.cucumber.runners.TestRunner1</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@7ecf4608)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Submit form with all valid data", "Booking Page UI and Functional Validation")</span>
+                <span class="method-start">997 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Submit form with missing name", "Booking Page UI and Functional Validation")</span>
+                <span class="method-start">21162 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Submit form with invalid email format", "Booking Page UI and Functional Validation")</span>
+                <span class="method-start">23695 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Submit form with missing trip type", "Booking Page UI and Functional Validation")</span>
+                <span class="method-start">26544 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Submit form with missing number of passengers", "Booking Page UI and Functional Validation")</span>
+                <span class="method-start">28993 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Booking with row 0 from Excel data", "Booking Page UI and Functional Validation")</span>
+                <span class="method-start">31893 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Booking with row 1 from Excel data", "Booking Page UI and Functional Validation")</span>
+                <span class="method-start">35240 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validate Phone Number field with invalid inputs", "Booking Page UI and Functional Validation")</span>
+                <span class="method-start">37631 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validate Pickup Date field with invalid date", "Booking Page UI and Functional Validation")</span>
+                <span class="method-start">41227 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validate invalid time input", "Booking Page UI and Functional Validation")</span>
+                <span class="method-start">43854 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validate Trip Type invalid selection", "Booking Page UI and Functional Validation")</span>
+                <span class="method-start">46521 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify that cab service link navigates to the correct page", "Service Page Cab Type Link Navigation...)</span>
+                <span class="method-start">61767 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify that cab service link navigates to the correct page", "Service Page Cab Type Link Navigation...)</span>
+                <span class="method-start">63810 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify that cab service link navigates to the correct page", "Service Page Cab Type Link Navigation...)</span>
+                <span class="method-start">65790 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify that cab service link navigates to the correct page", "Service Page Cab Type Link Navigation...)</span>
+                <span class="method-start">68063 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">69851 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -1,0 +1,2 @@
+16:52:58.426 [main] INFO  - Browser launched and booking page opened at: https://webapps.tekstac.com/SeleniumApp2/CallTaxiService/booking.html
+16:52:58.466 [main] INFO  - Filling form with: {Name=Atul, Phone=9876543210, Email=atul@gmail.com, Trip=long, Cab=Mini, CabType=AC, Date=2025-07-28, Time=09:30, Passenger=2, TripType=oneway}
